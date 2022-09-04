@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  distDir: "dist",
   webpack: (config, options) => {
     // console.log(options.webpack);
     config.plugins.push(
