@@ -11,7 +11,7 @@ const Logo = dynamic(() => import("remoteApp/Logo"), {
 const Wrapper: NextPage = () => {
   const router = useRouter();
   const { apps } = router.query;
-  console.log(router.query);
+  // console.log(router.query);
 
   return (
     <div>
