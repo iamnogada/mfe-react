@@ -1,5 +1,5 @@
 import { Badge, Navbar, NavLink } from '@mantine/core'
-import { IconCurrentLocation, IconCurrentLocationOff, IconCircleOff, IconGauge, IconHome2 } from '@tabler/icons'
+import { IconCurrentLocation, IconCurrentLocationOff, IconCircleOff, IconGauge, IconHome2, IconUsers } from '@tabler/icons'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
@@ -20,6 +20,9 @@ function MainNavbar({ }: Props) {
         </Link>
         <Link href="/remote" passHref>
           <NavLink label="Remote App" icon={<IconCurrentLocationOff size={16} stroke={1.5} />} active={router.pathname === '/remote'} />
+        </Link>
+        <Link href="/member" passHref>
+          <NavLink label="Member App" icon={<IconUsers size={16} stroke={1.5} />} active={router.pathname === '/member'} />
         </Link>
 
       </Navbar.Section>

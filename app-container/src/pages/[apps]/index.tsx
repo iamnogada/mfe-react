@@ -8,7 +8,7 @@ const Logo = dynamic(() => import("remoteApp/Logo"), {
   ssr: false
 });
 
-const Local: NextPage = () => {
+const Wrapper: NextPage = () => {
   const router = useRouter();
   const { apps } = router.query;
   console.log(router.query);
@@ -21,8 +21,9 @@ const Local: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>Apps: {apps}</div>
+      <Logo />
     </div>
   );
 };
 
-export default Local;
+export default Wrapper;
